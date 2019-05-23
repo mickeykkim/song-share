@@ -1,7 +1,7 @@
 <template>
   <v-layout column>
     <v-flex>
-      <!-- <panel title="Register"> -->
+      <panel title="Register">
         <form
           name="tab-tracker-form"
           autocomplete="off">
@@ -26,14 +26,18 @@
           @click="register">
           Register
         </v-btn>
-      <!-- </panel> -->
+      </panel>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
 import AuthenticationService from '@/services/AuthenticationService'
+import Panel from '@/components/Panel'
 export default {
+  components: {
+    Panel
+  },
   data () {
     return {
       email: '',
