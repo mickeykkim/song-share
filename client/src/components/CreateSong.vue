@@ -52,7 +52,6 @@
       <div class="danger-alert" v-if="error">
         {{error}}
       </div>
-      
       <v-btn
         dark
         class="deep-orange lighten-1"
