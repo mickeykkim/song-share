@@ -1,7 +1,7 @@
 <template>
   <v-layout column>
     <v-flex>
-      <!-- <panel title="Register"> -->
+      <!-- <panel title="Login"> -->
         <form
           name="tab-tracker-form"
           autocomplete="off">
@@ -23,8 +23,8 @@
         <v-btn
           dark
           class="deep-orange lighten-1"
-          @click="register">
-          Register
+          @click="login">
+          Login
         </v-btn>
       <!-- </panel> -->
     </v-flex>
@@ -44,9 +44,9 @@ export default {
   watch: {
   },
   methods: {
-    async register () {
+    async login () {
       try {
-        await AuthenticationService.register({
+        await AuthenticationService.login({
           email: this.email,
           password: this.password
         })
