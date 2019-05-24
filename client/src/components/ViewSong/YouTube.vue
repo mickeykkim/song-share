@@ -1,23 +1,30 @@
 <template>
   <panel title="YouTube Video">
-    <youtube
-      :video-id="youtubeId"
-    />
+    <div class="container">
+      <youtube
+        :video-id="youtubeId"
+        :resize="true"
+        :fit-parent="true"
+      />
+    </div>
   </panel>
 </template>
 
 <script>
-import Panel from '@/components/Panel'
 export default {
   props: [
     'youtubeId'
-  ],
-  components: {
-    Panel
-  }
+  ]
 }
 </script>
 
 <style scoped>
-
+.container {
+  position: relative;
+  top: -25px;
+  left: -20px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 52%;
+}
 </style>

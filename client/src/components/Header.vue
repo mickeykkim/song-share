@@ -5,7 +5,7 @@
         class="home"
         @click="navigateTo({name: 'root'})">
         <v-icon>queue_music</v-icon>
-        Song Manager
+        Song Collection
       </span>
     </v-toolbar-title>
     <v-toolbar-items>

@@ -11,6 +11,22 @@
         <div class="song-album">
           {{song.album}}
         </div>
+        <div class="song-genre">
+          {{song.genre}}
+        </div>
+
+        <v-btn
+          dark
+          class="deep-orange lighten-1"
+          @click="navigateTo({
+            name: 'song-edit',
+            params: {
+              songId: song.id
+            }
+          })">
+          Edit
+        </v-btn>
+
       </v-flex>
 
       <v-flex xs6>
@@ -23,13 +39,14 @@
 </template>
 
 <script>
-import Panel from '@/components/Panel'
 export default {
   props: [
     'song'
   ],
-  components: {
-    Panel
+  methods: {
+    navigateTo (route) {
+      this.$router.push(route)
+    }
   }
 }
 </script>

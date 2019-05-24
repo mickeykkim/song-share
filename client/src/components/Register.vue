@@ -6,15 +6,16 @@
           name="tab-tracker-form"
           autocomplete="off">
           <v-text-field
-            label="Email"
+            label="New User Email"
             v-model="email"
           ></v-text-field>
           <br>
           <v-text-field
-            label="Password"
+            label="New User Password"
             type="password"
             v-model="password"
             autocomplete="new-password"
+            @keyup.enter.native="login"
           ></v-text-field>
         </form>
         <br>
@@ -33,11 +34,7 @@
 
 <script>
 import AuthenticationService from '@/services/AuthenticationService'
-import Panel from '@/components/Panel'
 export default {
-  components: {
-    Panel
-  },
   data () {
     return {
       email: '',
@@ -56,6 +53,9 @@ export default {
         })
         this.$store.dispatch('setToken', response.data.token)
         this.$store.dispatch('setUser', response.data.user)
+        this.$router.push({
+          name: 'songs'
+        })
       } catch (error) {
         this.error = error.response.data.error
       }

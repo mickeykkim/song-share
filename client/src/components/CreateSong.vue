@@ -1,7 +1,7 @@
 <template>
   <v-layout>
     <v-flex>
-      <panel title="Song Metadata">
+      <panel title="Create Song Metadata">
         <v-text-field
           label="Title*"
           required
@@ -17,17 +17,17 @@
         ></v-text-field>
 
         <v-text-field
-          label="Genre*"
-          required
-          :rules="[required]"
-          v-model="song.genre"
-        ></v-text-field>
-
-        <v-text-field
           label="Album*"
           required
           :rules="[required]"
           v-model="song.album"
+        ></v-text-field>
+
+        <v-text-field
+          label="Genre*"
+          required
+          :rules="[required]"
+          v-model="song.genre"
         ></v-text-field>
 
         <v-text-field
@@ -60,7 +60,6 @@
 </template>
 
 <script>
-import Panel from '@/components/Panel'
 import SongsService from '@/services/SongsService'
 
 export default {
@@ -97,9 +96,6 @@ export default {
         console.log(err)
       }
     }
-  },
-  components: {
-    Panel
   }
 }
 </script>
