@@ -1,6 +1,8 @@
 # Playlist Manager
 A (SEVN) SQLite / Express.js / Vue.js / Node.js web application for managing youtube playlists
 
+Code adapted from: https://github.com/codyseibert/tab-tracker/
+
 # Setup
 
 You need to have Node Js installed: https://nodejs.org/en/
