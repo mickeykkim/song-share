@@ -28,8 +28,8 @@
               <div class="song-artist">
                 {{song.artist}}
               </div>
-              <div class="song-genre">
-                {{song.genre}}
+              <div class="song-album">
+                {{song.album}}
               </div>
 
             <v-btn
@@ -93,12 +93,12 @@ export default {
   font-size: 24px;
 }
 
-.song-genre {
+.song-album {
   font-size: 18px;
 }
 
 .album-image {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
 }
 </style>

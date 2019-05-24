@@ -3,11 +3,16 @@
     <v-flex xs6>
       <song-metadata :song="song" />
     </v-flex>
+
+    <v-flex xs6 class="ml-3">
+      <you-tube :youtubeId="song.youtubeId" />
+    </v-flex>
   </v-layout>
 </template>
 
 <script>
-import SongMetadata from '@/components/ViewSong/SongMetadata'
+import SongMetadata from './SongMetadata'
+import YouTube from './YouTube'
 import SongsService from '@/services/SongsService'
 import Panel from '@/components/Panel'
 export default {
@@ -22,21 +27,13 @@ export default {
   },
   components: {
     Panel,
-    SongMetadata
+    SongMetadata,
+    SongsService,
+    YouTube
   }
 }
 </script>
 
 <style scoped>
 
-textarea {
-  width: 100%;
-  font-family: monospace;
-  border: none;
-  height: auto;
-  border-style: none;
-  border-color: transparent;
-  overflow: auto;
-  padding: 40px;
-}
 </style>
