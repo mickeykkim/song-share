@@ -2,7 +2,7 @@
   <v-layout column>
     <v-flex xs6>
       <songs-search-panel />
-      <songs-panel class="mt-3"/>
+      <songs-panel class="mt-3" />
     </v-flex>
   </v-layout>
 </template>
@@ -19,11 +19,6 @@ export default {
   data () {
     return {
       songs: null
-    }
-  },
-  methods: {
-    navigateTo (route) {
-      this.$router.push(route)
     }
   },
   async mounted () {

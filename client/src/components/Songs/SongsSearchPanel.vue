@@ -9,6 +9,7 @@
 
 <script>
 import _ from 'lodash'
+
 export default {
   data () {
     return {
@@ -25,7 +26,9 @@ export default {
           search: this.search
         }
       }
-      this.$router.push(route)
+      if (this.$route.name === 'songs') {
+        this.$router.push(route)
+      }
     }, 500),
     '$route.query.search': {
       immediate: true,
