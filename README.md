@@ -1,5 +1,5 @@
-# Playlist Manager
-A (SEVN) SQLite / Express.js / Vue.js / Node.js web application for managing youtube playlists
+# Song Manager
+A (SEVN) SQLite / Express.js / Vue.js / Node.js web application for managing songs with youtube embedded players
 
 Code adapted from: https://github.com/codyseibert/tab-tracker/
 
