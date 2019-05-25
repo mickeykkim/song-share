@@ -9,12 +9,48 @@
     "sharedBy": "Mickey"
   },
   {
-    "title": "Float On",
-    "artist": "Modest Mouse",
-    "album": "Good News for People Who Love Bad News",
-    "genre": "Rock",
-    "albumImageUrl": "https://images-na.ssl-images-amazon.com/images/I/61RmDQUGIAL._SL1500_.jpg",
-    "youtubeId": "CTAud5O7Qqk",
+    "title": "idontwannabeyouanymore",
+    "artist": "Billie Eilish",
+    "album": "dont smile at me",
+    "genre": "Pop",
+    "albumImageUrl": "https://t2.genius.com/unsafe/440x440/https%3A%2F%2Fimages.genius.com%2F66171f217f1a3cc601351a3ce993c6d4.1000x1000x1.jpg",
+    "youtubeId": "-tn2S3kJlyU",
+    "sharedBy": "Alison"
+  },
+  {
+    "title": "Your Hand In Mine",
+    "artist": "Explosions In The Sky",
+    "album": "The Earth Is Not A Cold Dead Place",
+    "genre": "Post Rock",
+    "albumImageUrl": "https://upload.wikimedia.org/wikipedia/en/f/f9/The_earth_is_not_a_cold_dead_place.jpg",
+    "youtubeId": "JzIK5FaC38w",
+    "sharedBy": "Jordan"
+  },
+  {
+    "title": "Take Five",
+    "artist": "Dave Brubeck",
+    "album": "Dave Brubeck's Greatest Hits",
+    "genre": "Jazz",
+    "albumImageUrl": "https://images-na.ssl-images-amazon.com/images/I/81SnxzwuSPL._SL1200_.jpg",
+    "youtubeId": "vmDDOFXSgAs",
+    "sharedBy": "Mickey"
+  },
+  {
+    "title": "Shooting Stars",
+    "artist": "Bag Raiders",
+    "album": "Bag Raiders",
+    "genre": "Electronic Pop",
+    "albumImageUrl": "https://i.scdn.co/image/0fb0c3a51adb73292b339b1a792120ef1e24445a",
+    "youtubeId": "feA64wXhbjo",
+    "sharedBy": "Mickey"
+  },
+  {
+    "title": "Delibes: The Flower Duet (From Lakmé)",
+    "artist": "Katherine Jenkins",
+    "album": "Serenade",
+    "genre": "Classical",
+    "albumImageUrl": "https://m.media-amazon.com/images/I/81OJ+WKrrYL._SS500_.jpg",
+    "youtubeId": "SmEX4hEw4kQ",
     "sharedBy": "Alison"
   }
 ]
