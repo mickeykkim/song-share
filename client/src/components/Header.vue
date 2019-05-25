@@ -7,7 +7,10 @@
         :to="{
           name: 'root'
         }">
-        <v-icon>music_video</v-icon>
+        <v-icon
+          medium
+          light
+        >music_video</v-icon>
         Song Share
       </router-link>
     </v-toolbar-title>
@@ -17,6 +20,10 @@
         :to="{
           name: 'songs'
         }">
+        <v-icon
+          medium
+          light
+        >library_music</v-icon>
         Browse
       </v-btn>
     </v-toolbar-items>
@@ -27,6 +34,10 @@
           :to="{
             name: 'login'
           }">
+          <v-icon
+            medium
+            light
+          >person_outline</v-icon>
           Login
         </v-btn>
         <v-btn flat dark class="button-label"
@@ -34,11 +45,19 @@
           :to="{
             name: 'register'
           }">
+          <v-icon
+            medium
+            light
+          >person_add</v-icon>
           Sign Up
         </v-btn>
         <v-btn flat dark class="button-label"
           v-if="$store.state.isUserLoggedIn"
           @click="logout">
+          <v-icon
+            medium
+            light
+          >explore_off</v-icon>
           LogOut
         </v-btn>
       </v-toolbar-items>
