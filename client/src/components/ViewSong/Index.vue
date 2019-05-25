@@ -1,11 +1,8 @@
 <template>
   <v-layout>
-    <v-flex xs6>
-      <song-metadata :song="song" />
-    </v-flex>
-
-    <v-flex xs6 class="ml-3">
-      <you-tube :youtubeId="song.youtubeId" />
+    <v-flex>
+      <you-tube :youtubeId="song.youtubeId"/>
+      <song-metadata :song="song" class="mt-3" />
     </v-flex>
   </v-layout>
 </template>

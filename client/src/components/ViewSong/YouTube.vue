@@ -21,10 +21,8 @@ export default {
 <style scoped>
 .container {
   position: relative;
-  top: -25px;
-  left: -20px;
+  left: -25px;
   width: 100%;
-  height: 0;
-  padding-bottom: 52%;
+  height: 100%;
 }
 </style>
