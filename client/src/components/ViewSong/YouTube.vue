@@ -22,7 +22,5 @@ export default {
 .container {
   position: relative;
   left: -25px;
-  width: 100%;
-  height: 100%;
 }
 </style>
