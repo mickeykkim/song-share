@@ -52,7 +52,7 @@
 
         <v-text-field
           dark
-          label="Sharer*"
+          label="Name of Sharer*"
           required
           :rules="[required]"
           v-model="song.sharedBy"
@@ -64,8 +64,9 @@
 
         <v-btn
           dark
-          class="deep-orange lighten-1"
+          class="light-blue darken-1"
           @click="save">
+          <v-icon dark left>check_circle</v-icon>
           Save Song
         </v-btn>
       </panel>

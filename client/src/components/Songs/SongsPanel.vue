@@ -7,10 +7,14 @@
         name: 'songs-create'
       }"
       class="light-blue darken-1"
-      small
+      medium
       dark
       absolute
       right>
+      <v-icon
+        small
+        light
+      >add</v-icon>
       Share Song
     </v-btn>
 
@@ -45,8 +49,10 @@
             params: {
               songId: song.id
             }
-          }"
-          >View</v-btn>
+          }">
+          <v-icon dark left>visibility</v-icon>
+          View
+        </v-btn>
 
         </v-flex>
         <v-flex xs6>
@@ -103,7 +109,7 @@ export default {
 }
 
 .album-image {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
 }
 </style>

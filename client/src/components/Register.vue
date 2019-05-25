@@ -25,8 +25,9 @@
         <br>
         <v-btn
           dark
-          class="deep-orange lighten-1"
+          class="light-blue darken-1"
           @click="register">
+          <v-icon dark left>check_circle</v-icon>
           Register
         </v-btn>
       </panel>

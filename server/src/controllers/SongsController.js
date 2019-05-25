@@ -1,3 +1,5 @@
+'use strict'
+
 const {Song} = require('../models')
 const {Op} = require('sequelize');
 

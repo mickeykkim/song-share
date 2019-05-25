@@ -1,3 +1,5 @@
+'use strict'
+
 import Api from '@/services/Api'
 
 export default {

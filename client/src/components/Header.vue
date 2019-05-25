@@ -23,6 +23,7 @@
         <v-icon
           medium
           light
+          left
         >library_music</v-icon>
         Browse
       </v-btn>
@@ -37,7 +38,8 @@
           <v-icon
             medium
             light
-          >person_outline</v-icon>
+            left
+          >person</v-icon>
           Login
         </v-btn>
         <v-btn flat dark class="button-label"
@@ -48,6 +50,7 @@
           <v-icon
             medium
             light
+            left
           >person_add</v-icon>
           Sign Up
         </v-btn>
@@ -57,7 +60,8 @@
           <v-icon
             medium
             light
-          >explore_off</v-icon>
+            left
+          >exit_to_app</v-icon>
           LogOut
         </v-btn>
       </v-toolbar-items>

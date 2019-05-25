@@ -31,6 +31,7 @@
               }
             }
           }">
+          <v-icon dark left>edit</v-icon>
           Edit
         </v-btn>
 

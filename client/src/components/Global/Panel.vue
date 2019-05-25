@@ -1,6 +1,6 @@
 <template>
   <div class="dark-gray">
-    <v-toolbar flat dense class="bar-gradient" dark>
+    <v-toolbar flat dense class="bar-gradient">
       <v-toolbar-title>{{title}}</v-toolbar-title>
       <slot name="action" />
     </v-toolbar>
@@ -25,7 +25,7 @@ export default {
   background: #22252b;
 }
 .bar-gradient {
-  color: #141414;
+  color: #ffffff;
   background: rgb(70,70,70);
   background: linear-gradient(90deg, rgba(100,100,100,1) 0%, rgba(34,37,43,1) 100%);
 }
