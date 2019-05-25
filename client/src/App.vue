@@ -27,7 +27,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #c8e2fc;
+  background: #191a1f;
   margin-top: 60px;
 }
 .danger-alert {

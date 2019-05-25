@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar fixed class="deep-orange lighten-1" dark>
+  <v-toolbar fixed class="sunset" dark>
     <v-toolbar-title class="mr-4">
       <router-link
         class="home"
@@ -7,12 +7,12 @@
         :to="{
           name: 'root'
         }">
-        <v-icon>queue_music</v-icon>
+        <v-icon>music_video</v-icon>
         Song Share
       </router-link>
     </v-toolbar-title>
     <v-toolbar-items>
-      <v-btn 
+      <v-btn class="button-label"
         flat dark
         :to="{
           name: 'songs'
@@ -22,21 +22,21 @@
     </v-toolbar-items>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn flat dark
+        <v-btn flat dark class="button-label"
           v-if="!$store.state.isUserLoggedIn"
           :to="{
             name: 'login'
           }">
           Login
         </v-btn>
-        <v-btn flat dark
+        <v-btn flat dark class="button-label"
           v-if="!$store.state.isUserLoggedIn"
           :to="{
             name: 'register'
           }">
           Sign Up
         </v-btn>
-        <v-btn flat dark
+        <v-btn flat dark class="button-label"
           v-if="$store.state.isUserLoggedIn"
           @click="logout">
           LogOut
@@ -64,6 +64,15 @@ export default {
   cursor: pointer;
 }
 .home:hover {
-  color: rgb(0, 217, 255);
+  color: #01579B;
+}
+.sunset {
+  color: #141414;
+  background: rgb(168,108,209);
+  background: linear-gradient(90deg, rgba(168,108,209,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+.button-label {
+  color: #141414;
+  background: rgba(255,255,255,0.1);
 }
 </style>

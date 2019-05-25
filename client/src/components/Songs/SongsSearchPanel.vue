@@ -1,6 +1,7 @@
 <template>
   <panel title="Search">
     <v-text-field
+      dark
       label="Search by song title, artist, album, genre, or sharer"
       v-model="search"
     ></v-text-field>
