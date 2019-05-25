@@ -3,15 +3,12 @@
     <v-toolbar-title class="mr-4">
       <router-link
         class="home"
-        tag="span"
+        tag="div"
         :to="{
           name: 'root'
         }">
-        <v-icon
-          medium
-          light
-        >music_video</v-icon>
-        Song Share
+        <img src="../assets/logo.png" height=30/>
+        <p>Song Share</p>
       </router-link>
     </v-toolbar-title>
     <v-toolbar-items>
@@ -83,11 +80,21 @@ export default {
 </script>
 
 <style scoped>
+p {
+  line-height: 34px;
+}
+div {
+  display: flex;
+  height: 36px;
+}
+img {
+  margin-right: 10px;
+}
 .home {
   cursor: pointer;
 }
 .home:hover {
-  color: rgb(56, 65, 66);
+  color: rgb(255, 255, 255);
 }
 .sunset {
   color: #141414;

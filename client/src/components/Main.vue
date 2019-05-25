@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>A site for friends to share and discover new music.</h2>
-    <br>
+    <br><br>
     <div class="splash">
         <svg viewBox="0 0 88 154" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs>
@@ -20,7 +20,7 @@
           </g>
       </g>
     </svg>
-    <br>
+    <br><br>
     <h2>Thanks and enjoy!</h2>
   </div>
   </div>
@@ -44,8 +44,7 @@ h1, h2 {
 }
 svg {
   width: 25vw;
-
-} 
+}
 #shape {
   stroke: url(#note);
   stroke-dasharray: 440;
