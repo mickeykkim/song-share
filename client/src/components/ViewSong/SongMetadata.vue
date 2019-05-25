@@ -22,7 +22,7 @@
         <v-btn
           v-if="isUserLoggedIn"
           dark
-          class="deep-orange lighten-1"
+          class="light-blue darken-1"
           :to="{
             name: 'song-edit',
             params () {

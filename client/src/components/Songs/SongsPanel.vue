@@ -6,16 +6,12 @@
       :to="{
         name: 'songs-create'
       }"
-      class="deep-orange accent-1"
+      class="light-blue darken-1"
       small
       dark
-      fab
       absolute
       right>
-      <v-icon
-        x-large>
-        add
-      </v-icon>
+      Share Song
     </v-btn>
 
     <div
@@ -43,7 +39,7 @@
 
         <v-btn
           dark
-          class="deep-orange lighten-1"
+          class="light-blue darken-1"
           :to="{
             name: 'song',
             params: {
