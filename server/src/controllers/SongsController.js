@@ -10,7 +10,7 @@ module.exports = {
         songs = await Song.findAll({
           where: {
             [Op.or]: [
-              'title', 'artist', 'genre', 'album'
+              'title', 'artist', 'genre', 'album', 'sharedBy'
             ].map(key => ({
               [key]: {
                 [Op.like]: `%${search}%`
@@ -26,7 +26,7 @@ module.exports = {
       res.send(songs)
     } catch (err) {
       res.status(500).send({
-        error: 'an error has occured trying to fetch the songs'
+        error: 'An error has occured trying to fetch the songs.'
       })
     }
   },

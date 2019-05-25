@@ -8,11 +8,12 @@
           name: 'root'
         }">
         <v-icon>queue_music</v-icon>
-        Song Collection
+        Song Share
       </router-link>
     </v-toolbar-title>
     <v-toolbar-items>
-      <v-btn flat dark
+      <v-btn 
+        flat dark
         :to="{
           name: 'songs'
         }">
@@ -63,6 +64,6 @@ export default {
   cursor: pointer;
 }
 .home:hover {
-  color: #BBDEFB;
+  color: rgb(0, 217, 255);
 }
 </style>

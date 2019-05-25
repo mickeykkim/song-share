@@ -1,6 +1,7 @@
 <template>
   <panel title ="Songs">
     <v-btn
+      v-if="isUserLoggedIn"
       slot="action"
       :to="{
         name: 'songs-create'
@@ -33,6 +34,12 @@
           <div class="song-album">
             {{song.album}}
           </div>
+          <br>
+          <div class="song-sharer">
+            Shared by:
+            {{song.sharedBy}}
+            <br>
+          </div>
 
         <v-btn
           dark
@@ -56,11 +63,18 @@
 
 <script>
 import SongsService from '@/services/SongsService'
+import {mapState} from 'vuex'
 export default {
   data () {
     return {
       songs: null
     }
+  },
+  computed: {
+    ...mapState([
+      'isUserLoggedIn',
+      'user'
+    ])
   },
   watch: {
     '$route.query.search': {

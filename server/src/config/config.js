@@ -9,7 +9,7 @@ module.exports = {
     options: {
         dialect: process.env.DIALECT || 'sqlite',
         host: process.env.HOST || 'localhost',
-        storage: path.resolve(__dirname, '../../song-manager.sqlite')
+        storage: path.resolve(__dirname, '../../song-share.sqlite')
     }
   },
   authentication: {

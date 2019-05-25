@@ -1,5 +1,5 @@
 <template>
-  <panel title="Song Metadata">
+  <panel title="Song Details">
     <v-layout>
       <v-flex xs6>
         <div class="song-title">
@@ -14,8 +14,13 @@
         <div class="song-genre">
           {{song.genre}}
         </div>
-
+        <br>
+        <div class="song-sharer">
+          Shared by: {{song.sharedBy}}
+          <br>
+        </div>
         <v-btn
+          v-if="isUserLoggedIn"
           dark
           class="deep-orange lighten-1"
           :to="{
@@ -41,10 +46,30 @@
 </template>
 
 <script>
+import {mapState} from 'vuex'
 export default {
   props: [
     'song'
-  ]
+  ],
+  data () {
+    return {
+      bookmark: null
+    }
+  },
+  computed: {
+    ...mapState([
+      'isUserLoggedIn',
+      'user'
+    ])
+  },
+  watch: {
+    async song () {
+      if (!this.isUserLoggedIn) {
+      }
+    }
+  },
+  methods: {
+  }
 }
 </script>
 

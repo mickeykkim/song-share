@@ -1,7 +1,7 @@
 <template>
   <v-layout>
     <v-flex>
-      <panel title="Create Song Metadata">
+      <panel title="Share Song">
         <v-text-field
           label="Title*"
           required
@@ -44,6 +44,13 @@
           v-model="song.youtubeId"
         ></v-text-field>
 
+        <v-text-field
+          label="Sharer*"
+          required
+          :rules="[required]"
+          v-model="song.sharedBy"
+        ></v-text-field>
+
         <div class="danger-alert" v-if="error">
           {{error}}
         </div>
@@ -71,7 +78,8 @@ export default {
         genre: null,
         album: null,
         albumImageUrl: null,
-        youtubeId: null
+        youtubeId: null,
+        sharedBy: null
       },
       error: null,
       required: (value) => !!value || 'Required.'
