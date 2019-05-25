@@ -1,5 +1,5 @@
-# Song Manager
-A (SEVN) SQLite / Express.js / Vue.js / Node.js web application for managing songs with youtube embedded players
+# Song Share
+A (SEVN) Sequelize / Express.js / Vue.js / Node.js web application for sharing songs with youtube embedded players
 
 Code adapted from: https://github.com/codyseibert/tab-tracker/
 
