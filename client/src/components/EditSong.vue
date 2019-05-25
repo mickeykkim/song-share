@@ -1,8 +1,9 @@
 <template>
   <v-layout>
     <v-flex>
-      <panel title="Edit Song Metadata">
+      <panel title="Edit Song">
         <v-text-field
+          dark
           label="Title*"
           required
           :rules="[required]"
@@ -10,6 +11,7 @@
         ></v-text-field>
 
         <v-text-field
+          dark
           label="Artist*"
           required
           :rules="[required]"
@@ -17,6 +19,7 @@
         ></v-text-field>
 
         <v-text-field
+          dark
           label="Album*"
           required
           :rules="[required]"
@@ -24,6 +27,7 @@
         ></v-text-field>
 
         <v-text-field
+          dark
           label="Genre*"
           required
           :rules="[required]"
@@ -31,6 +35,7 @@
         ></v-text-field>
 
         <v-text-field
+          dark
           label="Album Image URL*"
           required
           :rules="[required]"
@@ -38,6 +43,7 @@
         ></v-text-field>
 
         <v-text-field
+          dark
           label="Youtube ID*"
           required
           :rules="[required]"
@@ -45,6 +51,7 @@
         ></v-text-field>
 
         <v-text-field
+          dark
           label="Sharer*"
           required
           :rules="[required]"

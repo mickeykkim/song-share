@@ -64,7 +64,7 @@ export default {
   cursor: pointer;
 }
 .home:hover {
-  color: #01579B;
+  color: rgb(56, 65, 66);
 }
 .sunset {
   color: #141414;

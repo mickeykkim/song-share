@@ -26,7 +26,7 @@ export default {
 }
 .bar-gradient {
   color: #141414;
-  background: rgb(101,95,115);
-  background: linear-gradient(93deg, rgba(101,95,115,1) 0%, rgba(43,43,59,1) 100%);
+  background: rgb(70,70,70);
+  background: linear-gradient(90deg, rgba(100,100,100,1) 0%, rgba(34,37,43,1) 100%);
 }
 </style>
