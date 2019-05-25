@@ -23,6 +23,22 @@
     <br><br>
     <h2>Thanks and enjoy!</h2>
   </div>
+  <br><br>
+  <div class="marks">
+    <h2>Estimated Marks for COMSM0104:</h2>
+    <br>
+    <ul>
+      <li>A for HTML</li>
+      <li>A for CSS</li>
+      <li>B for JS</li>
+      <li>A for PNG</li>
+      <li>A for SVG</li>
+      <li>B for Server</li>
+      <li>B for Database</li>
+      <li>B for Dynamic pages</li>
+      <li>29 for Depth (out of 40)</li>
+    </ul>
+  </div>
   </div>
 </template>
 
@@ -59,5 +75,12 @@ svg {
   to {
     stroke-dashoffset: 0;
   }
+}
+.marks {
+  width: 30%;
+  margin: 0 35%;
+}
+li {
+  text-align: left
 }
 </style>
