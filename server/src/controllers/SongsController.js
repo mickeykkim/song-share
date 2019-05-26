@@ -28,7 +28,7 @@ module.exports = {
       res.send(songs)
     } catch (err) {
       res.status(500).send({
-        error: 'An error has occured trying to fetch the songs.'
+        error: 'An error has occurred trying to fetch the songs.'
       })
     }
   },
@@ -38,7 +38,7 @@ module.exports = {
       res.send(song)
     } catch (err) {
       res.status(500).send({
-        error: 'An error has occured trying to show the song.'
+        error: 'An error has occurred trying to show the song.'
       })
     }
   },
@@ -48,7 +48,7 @@ module.exports = {
       res.send(song)
     } catch (err) {
       res.status(500).send({
-        error: 'An error has occured trying to create a song.'
+        error: 'An error has occurred trying to create a song.'
       })
     }
   },
@@ -62,7 +62,7 @@ module.exports = {
       res.send(req.body)
     } catch (err) {
       res.status(500).send({
-        error: 'An error has occured trying to update a song.'
+        error: 'An error has occurred trying to update a song.'
       })
     }
   }

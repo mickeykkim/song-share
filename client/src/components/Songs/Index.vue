@@ -34,18 +34,6 @@ export default {
   overflow: hidden;
 }
 
-.song-title {
-  font-size: 30px;
-}
-
-.song-artist {
-  font-size: 24px;
-}
-
-.song-album {
-  font-size: 18px;
-}
-
 .album-image {
   width: 50%;
   margin: 0 auto;

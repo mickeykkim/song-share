@@ -72,7 +72,7 @@
           </v-btn>
           <v-btn
             dark
-            class="red darken-1"
+            class="red lighten-1"
             @click="$router.go(-1)">
             <v-icon dark left>cancel</v-icon>
             Cancel
@@ -126,4 +126,7 @@ export default {
 </script>
 
 <style scoped>
+.v-btn {
+  width: 160px;
+}
 </style>

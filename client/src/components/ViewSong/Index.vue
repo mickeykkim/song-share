@@ -1,6 +1,13 @@
 <template>
   <v-layout>
-    <v-flex>
+    <v-flex v-if="song === ''">
+      <panel title="Error">
+        <div class="danger-alert">
+          Could not load song.
+        </div>
+      </panel>
+    </v-flex>
+    <v-flex v-else-if="song !== '' || null">
       <you-tube :youtubeId="song.youtubeId"/>
       <song-metadata :song="song" class="mt-3" />
     </v-flex>
@@ -29,5 +36,8 @@ export default {
 </script>
 
 <style scoped>
-
+.danger-alert {
+  font-size: 18px;
+  padding: 10px;
+}
 </style>

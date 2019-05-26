@@ -92,7 +92,7 @@ export default {
 <style scoped>
 .song {
   padding: 20px;
-  height: 330px;
+  height: 260px;
   overflow: hidden;
 }
 
@@ -108,8 +108,12 @@ export default {
   font-size: 18px;
 }
 
+.song-sharer {
+  font-size: 16px;
+}
+
 .album-image {
-  width: 70%;
+  width: 55%;
   margin: 0 auto;
 }
 </style>

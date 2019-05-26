@@ -62,12 +62,10 @@ export default {
     ])
   },
   watch: {
-    async song () {
-      if (!this.isUserLoggedIn) {
-      }
-    }
   },
   methods: {
+  },
+  async mounted () {
   }
 }
 </script>
@@ -89,6 +87,14 @@ export default {
 
 .song-album {
   font-size: 18px;
+}
+
+.song-genre {
+  font-size: 18px;
+}
+
+.song-sharer {
+  font-size: 20px;
 }
 
 .album-image {
