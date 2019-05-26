@@ -20,22 +20,6 @@
       <h1>{{ msg }}</h1>
       <h2>A site for people to share and discover new music.</h2>
     </div>
-
-    <div class="marks">
-      <h2>Estimated Marks for COMSM0104:</h2>
-      <br>
-      <ul>
-        <li>A for HTML</li>
-        <li>A for CSS</li>
-        <li>B for JS</li>
-        <li>A for PNG</li>
-        <li>A for SVG</li>
-        <li>B for Server</li>
-        <li>B for Database</li>
-        <li>B for Dynamic pages</li>
-        <li>29 for Depth (out of 40)</li>
-      </ul>
-    </div>
   </div>
 </template>
 
@@ -84,14 +68,5 @@ svg {
   to {
     stroke-dashoffset: 0;
   }
-}
-.marks {
-    width: 40%;
-    margin: 70px 30%;
-    border: 1px dashed;
-    padding: 20px;
-}
-li {
-  text-align: left;
 }
 </style>
