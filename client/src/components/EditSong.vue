@@ -62,13 +62,22 @@
           {{error}}
         </div>
 
-        <v-btn
-          dark
-          class="light-blue darken-1"
-          @click="save">
-          <v-icon dark left>check_circle</v-icon>
-          Save Song
-        </v-btn>
+        <div>
+          <v-btn
+            dark
+            class="light-blue darken-1"
+            @click="save">
+            <v-icon dark left>check_circle</v-icon>
+            Save Song
+          </v-btn>
+          <v-btn
+            dark
+            class="red darken-1"
+            @click="$router.go(-1)">
+            <v-icon dark left>cancel</v-icon>
+            Cancel
+          </v-btn>
+        </div>
       </panel>
     </v-flex>
   </v-layout>

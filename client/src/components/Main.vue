@@ -73,7 +73,7 @@ svg {
   stroke-dasharray: 440;
   stroke-dashoffset: 0;
   stroke-width: 2px;
-  animation: 2s path 1 ;
+  animation: 2s path 1;
 }
 @keyframes path {
   from {
@@ -90,6 +90,6 @@ svg {
     padding: 20px;
 }
 li {
-  text-align: left
+  text-align: left;
 }
 </style>
