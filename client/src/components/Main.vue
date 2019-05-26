@@ -18,13 +18,10 @@
           </g>
       </g>
     </svg>
-    <br><br>
     <h1>{{ msg }}</h1>
-    <h2>A site for friends to share and discover new music.</h2>
-    <br><br>
-    <h2>Thanks and enjoy!</h2>
+    <h2>A site for people to share and discover new music.</h2>
   </div>
-  <br><br>
+
   <div class="marks">
     <h2>Estimated Marks for COMSM0104:</h2>
     <br>
@@ -56,9 +53,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
 h1, h2 {
-  font-weight: normal
+  font-family: 'Roboto Mono', monospace;
 }
+h1 {
+  font-weight: 700;
+  margin: 25px 0;
+}
+h2 {
+  font-weight: 400;
+}
+
 svg {
   width: 25vw;
 }
@@ -78,8 +84,10 @@ svg {
   }
 }
 .marks {
-  width: 30%;
-  margin: 0 35%;
+    width: 40%;
+    margin: 80px 30%;
+    border: 1px dashed;
+    padding: 20px;
 }
 li {
   text-align: left
