@@ -5,9 +5,9 @@ const path = require('path')
 module.exports = {
   port: process.env.PORT || 8081,
   db: {
-    database: process.env.DB_NAME || 'playlistmanager',
-    user: process.env.DB_USER || 'playlistmanager',
-    password: process.env.DB_PASS || 'playlistmanager',
+    database: process.env.DB_NAME || 'songshare',
+    user: process.env.DB_USER || 'songshare',
+    password: process.env.DB_PASS || 'songshare',
     options: {
         dialect: process.env.DIALECT || 'sqlite',
         host: process.env.HOST || 'localhost',
