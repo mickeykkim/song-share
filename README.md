@@ -3,6 +3,8 @@ A (SEVN) Sequelize / Express.js / Vue.js / Node.js web application for sharing s
 
 Code adapted from: https://github.com/codyseibert/tab-tracker/
 
+![alt text](https://imgur.com/Y83GsV8.jpg "Splash Page")
+
 # Setup
 
 You need to have Node.js installed: https://nodejs.org/en/
