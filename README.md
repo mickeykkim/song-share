@@ -5,7 +5,7 @@ Code adapted from: https://github.com/codyseibert/tab-tracker/
 
 # Setup
 
-You need to have Node Js installed: https://nodejs.org/en/
+You need to have Node.js installed: https://nodejs.org/en/
 
 ### Client - Terminal A
 ```
@@ -20,3 +20,7 @@ cd server
 npm install
 npm start
 ```
+
+# Running
+
+After both client and server have started, open browser window to: http://localhost:8080/
