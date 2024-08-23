@@ -26,6 +26,6 @@
   "devDependencies": {
     "eslint-plugin-vue": "^5.2.2",
     "eslint": "^5.16.0",
-    "nodemon": "^1.19.0"
+    "nodemon": "^3.1.4"
   }
 }
